@@ -1,11 +1,11 @@
 /*
 
 Si scriva un programma che calcola il MCD con l'algoritmo di Euclide.
-L'algoritmo di Euclide è un algoritmo per trovare il massimo comun divisore (indicato di seguito 
+L'algoritmo di Euclide Ã¨ un algoritmo per trovare il massimo comun divisore (indicato di seguito 
 con MCD) tra due numeri interi. 
-Dati due numeri interi a e b, si controlla se b è zero.
-Se lo è, a è il MCD. Se non lo è, si divide a/b e si assegna ad r il resto della divisione.
-Se r=0 allora si può terminare affermando che b è il MCD cercato, altrimenti occore assegnare
+Dati due numeri interi a e b, si controlla se b Ã¨ zero.
+Se lo Ã¨, a Ã¨ il MCD. Se non lo Ã¨, si divide a/b e si assegna ad r il resto della divisione.
+Se r=0 allora si puÃ² terminare affermando che b Ã¨ il MCD cercato, altrimenti occore assegnare
 a=b e b=r e si ripete nuovamente la divisione.
 
 
@@ -14,7 +14,7 @@ ANALISI E SPECIFICA
 dati in input: Due numeri  
 precondizione: i due numeri devono essere interi
 dati in output: il MCD tra i due numeri e il resto
-postcondizione: se b=0 allora a è MCD, se a=0 allora b è il MCD
+postcondizione: se b=0 allora a Ã¨ MCD, se a=0 allora b Ã¨ il MCD
 
 NOME    TIPO      DESCRIZIONE
 a       int       Variabile int a
@@ -29,7 +29,7 @@ ANALISI E SPECIFICA DELLA FUNZIONE calcolo_mcd
 dati in input:
 precondizione:
 dati in output: il volore del resto e del MCD
-postcondizione: viene fatta la divisione finchè r è diverso da 0
+postcondizione: viene fatta la divisione finchÃ¨ r Ã¨ diverso da 0
 
 NOME    TIPO       DESCRIZIONE
 r       int        volore del resto della divisione
@@ -53,8 +53,8 @@ altrimenti a%b
 		se r=0 allora b
 		altriementi a=b e b=r 
 	finche r!=0
+fine funzione
 
-funzione main
 Far inserire il primo numero intero
 inizializzarlo come a
 far inserire il secondo numero intero
