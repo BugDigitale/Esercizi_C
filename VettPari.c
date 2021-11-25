@@ -15,8 +15,8 @@ vett1    array di interi   primo vettore di numeri interi inseriti dall'utente
 vett2    array di interi   secondo vettore di numeri interi inseriti dall'utente
 vettPar  array di interi   terzo vettore con i pari dei primi due vettori
 i        int               variabile intermedia usata come indice
-n1       int               variabile con la quantit‡ di numeri da voler inserire nel primo vettore
-n2       int               variabile con la quantit‡ di numeri da voler inserire nel secondo vettore
+n1       int               variabile con la quantit√† di numeri da voler inserire nel primo vettore
+n2       int               variabile con la quantit√† di numeri da voler inserire nel secondo vettore
 
 Come posso dividere il programma?
 -Funzione main
@@ -32,9 +32,9 @@ NOME      TIPO             DESCRIZIONE
 vett1     array di int     primo vettore di numeri interi inseriti dall'utente
 vett2     array di int     secondo vettore di numeri interi inseriti dall'utente
 i         int              variabile intermedia usata come indice
-n         int              variabile con la quantit‡ di numeri da voler inserire
-n1        int              variabile con la quantit‡ di numeri da voler inserire nel primo vettore
-n2        int              variabile con la quantit‡ di numeri da voler inserire nel secondo vettore
+n         int              variabile con la quantit√† di numeri da voler inserire
+n1        int              variabile con la quantit√† di numeri da voler inserire nel primo vettore
+n2        int              variabile con la quantit√† di numeri da voler inserire nel secondo vettore
 
 
 ANALISI E SPECIFICA FUNZIONE calcolo_pari
@@ -45,6 +45,8 @@ postcondizione:
 
 NOME      TIPO             DESCRIZIONE
 vettPar   array di int     vettore contente i numeri pari dei primi due vettori
+i         int              variabile intermedia usata come indice
+j         int              variabile intermedia usata come indice
 
 PROGETTAZIONE 
 Funzione main
@@ -55,9 +57,9 @@ Funzione main
 
 Funzione calcolo_pari
 -faccio un ciclo che controlli se i numeri del primo vettore sono pari
-	-se Ë cosÏ vengono inseriti nel vettore di output
+	-se √® cos√¨ vengono inseriti nel vettore di output
 -faccio un ciclo che controlli se i numeri del secondo vettore sono pari
-	-se Ë cosÏ vengono inseriti nel vettore di output
+	-se √® cos√¨ vengono inseriti nel vettore di output
 -Visualizzo il vettore finale con i numeri pari al suo interno
 */
 
