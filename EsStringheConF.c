@@ -1,19 +1,20 @@
 /* 
+16-01-2022
 
-Scrivere un programma in linguaggio c che legga una frase introdotta da tastiera. La frase Ë terminata dal carattere di invio.
-La frase contiene sia caratteri maiuscoli che minuscoli, e complessivamente al pi˘ 100 caratteri. Il programma deve svolgere le 
+Scrivere un programma in linguaggio c che legga una frase introdotta da tastiera. La frase √® terminata dal carattere di invio.
+La frase contiene sia caratteri maiuscoli che minuscoli, e complessivamente al pi√π 100 caratteri. Il programma deve svolgere le 
 seguenti operazioni:
 -Visualizzare la frase inserita;
 -Costruire una nuova frase tale che ogni lettera vocale presente nella frase di partenza sia seguita dalla lettera 'f'(se la 
- vocale Ë minuscola) o 'F'(se la vocale Ë maiuscola) nella nuova frase. Il programma deve memorizzare la nuova frase in una
+ vocale √® minuscola) o 'F'(se la vocale √® maiuscola) nella nuova frase. Il programma deve memorizzare la nuova frase in una
  opportuna variabile.
 -Visualizzare la nuova frase. Ad esempio la frase: VacAnze di NaTAle, diventa: VafcAFnzef dif NafTAFlef 
 
 ANALISI E SPECIFICA 
 -dati in input: una frase inserita dall'utente
--precondizione: questa frase puÚ contenere sia maiuscole che minuscole
+-precondizione: questa frase pu√≤ contenere sia maiuscole che minuscole
 -dati in output: la frase inserita e la frase inserita con le opportune modifiche 
--postcondizione: la frase modificata dovr‡ aver una f in caso di vocali in minuscolo e una F in caso di vocali in maiuscolo
+-postcondizione: la frase modificata dovr√† aver una f in caso di vocali in minuscolo e una F in caso di vocali in maiuscolo
 
 NOME        TIPO                 DESCRIZIONE 
 i           int                  variabile intermedia usata come indice
@@ -28,7 +29,7 @@ Come posso dividere il programma?
 
 ANALISI E SPECIFICA DELLA FUNZINE main
 -dati in input: frase inserita dall'utente
--precondizione: questa frase puÚ contenere sia maiuscole che minuscole
+-precondizione: questa frase pu√≤ contenere sia maiuscole che minuscole
 -dati in output: riscrittura della frase inserita
 -postcondizione:
 
@@ -40,7 +41,7 @@ ANALISI E SPECIFICA DELLA FUNZIONE cambioString
 -dati in input: frase inserita nella funzione main
 -precondizione:
 -dati in output: frase finale modificata 
--postcondizione: la frase modificata dovr‡ aver una f in caso di vocali in minuscolo e una F in caso di vocali in maiuscolo
+-postcondizione: la frase modificata dovr√† aver una f in caso di vocali in minuscolo e una F in caso di vocali in maiuscolo
 
 NOME         TIPO                 DESCRIZIONE
 i            int                  variabile intermedia usata come indice
