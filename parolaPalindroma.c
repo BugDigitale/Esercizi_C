@@ -1,20 +1,20 @@
 /*
 17-01-2022
 Scrivere un programma in linguaggio C che riceve in ingresso una parola inserita da tastiera. Si consideri che
-la parola puÚ contenere sia lettere maiuscole che minuscole, e complessivamente un massimo di 30 caratteri. Il
+la parola pu√≤ contenere sia lettere maiuscole che minuscole, e complessivamente un massimo di 30 caratteri. Il
 programma deve svolgere le seguenti operazioni:
 -Visualizzare la parola inserita;
--Aggiornare la parola in modo che tutti i caratteri siano miscuoli. Il programma dovr‡ visualizzare la parola 
+-Aggiornare la parola in modo che tutti i caratteri siano miscuoli. Il programma dovr√† visualizzare la parola 
  ottenuta;
--Verificare se la parola Ë palindroma. Una parola Ë palindroma se puÚ essere letta indifferentemente sia da 
+-Verificare se la parola √® palindroma. Una parola √® palindroma se pu√≤ essere letta indifferentemente sia da 
  destra verso sinsitra che da sinistra verso destra. Ad esempio, le seguenti parole sono palindrome: otto,
  madam...
  
 ANALISI E SPECIFICA
 -dati in input: una frase inserita da tastiera
--precondizione: questa frase potr‡ avere sia minuscole che maiuscole. La lunghezza massima Ë di 30 caratteri
--dati in output: la parola trasformata tutta in minuscolo. Una frase che dice se la parola Ë palindroma o no
--postcondizone: una parola Ë palindroma se puÚ essere letta indifferentemente sia da destra verso sinsitra 
+-precondizione: questa frase potr√† avere sia minuscole che maiuscole. La lunghezza massima √® di 30 caratteri
+-dati in output: la parola trasformata tutta in minuscolo. Una frase che dice se la parola √® palindroma o no
+-postcondizone: una parola √® palindroma se pu√≤ essere letta indifferentemente sia da destra verso sinsitra 
  che da sinistra verso destra
 
 NOME            TIPO                      DESCRIZIONE
@@ -31,12 +31,12 @@ COME POSSO DIVIDERE IL PROGRAMMA?
 
 ANALISI E SPECIFICA DELLA FUNZIONE main
 -dati in input: una frase inserita dall'utente
--precondizione: questa frase potr‡ avere sia minuscole che maiuscole. La lunghezza massima Ë di 30 caratteri
+-precondizione: questa frase potr√† avere sia minuscole che maiuscole. La lunghezza massima √® di 30 caratteri
 -dati in output:
 -postcondizione:
 
 NOME            TIPO                       DESCRIZIONE
-stringa         char                       vettore di caratteri dove Ë contenuata la frase
+stringa         char                       vettore di caratteri dove √® contenuata la frase
 dim             int                        dimensione della frase
 
 ANALISI E SPECIFICA DELLA FUNZIONE minuscole
@@ -51,14 +51,14 @@ i               int                         variabile intermedia usata come indi
 ANALISI E SPECIFICA DELLA FUNZIONE palindroma
 -dati in input: la parola inserita nel main
 -precondizione:
--dati in output: una frase che ti dice se la parola Ë palindroma oppure no
--postcondizione: una parola Ë palindroma se puÚ essere letta indifferentemente sia da destra verso sinsitra 
+-dati in output: una frase che ti dice se la parola √® palindroma oppure no
+-postcondizione: una parola √® palindroma se pu√≤ essere letta indifferentemente sia da destra verso sinsitra 
  che da sinistra verso destra
 
 NOME            TIPO                         DESCRIZIONE
 i               int                          variabile intermedia usata come indice
 j               int                          variabile intermedia usata come indice
-palindroma      int                          variabile di flag usata per capire se la parola Ë palindroma o no
+palindroma      int                          variabile di flag usata per capire se la parola √® palindroma o no
 
 PROGETTAZIONE
 funzione main
@@ -76,7 +76,7 @@ funzione palindroma
 -variabile di flag posta ad 1
 -ciclo for per il controllo delle lettere
 -if per controllare la variabile di flag
--stampa della frase se Ë palindroma  o se non lo Ë
+-stampa della frase se √® palindroma  o se non lo √®
 
 
 */
@@ -98,7 +98,7 @@ void minuscole(char stringa[], int dim){
 
 void palindroma(char stringa[], int dim){
 	int i, j;
-	int palindroma; //se =1 allora la parola Ë palindroma, se =0 non lo Ë
+	int palindroma; //se =1 allora la parola √® palindroma, se =0 non lo √®
 	
 	palindroma=1;
 	for(i=0, j=dim-1; i<dim && j>=0; i++, j--){
