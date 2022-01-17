@@ -110,7 +110,7 @@ void palindroma(char stringa[], int dim){
 	if(palindroma==0){
 		printf("\nla parola non e' palindroma!");
 	}else{
-		printf("\la parola e' palindroma");
+		printf("\nla parola e' palindroma");
 	}
 	
 }
