@@ -17,5 +17,9 @@ int main(){
 	libro1.pagine=100;
 	
 	printf("\nIl numero di pagine e': %d", (*p).pagine);
+	
+	//oppure
+	
+	printf("\nIl numero di pagine e': %d", p->pagine);
 }
 
