@@ -1,0 +1,38 @@
+/*
+Esempio di struct
+*/
+
+#include<stdio.h>
+#include<string.h>
+
+struct SData{
+	char nome[20];
+	char cognome[20];
+	int eta;
+};
+typedef struct SData TData;   		//così dichiaro la struttura SData di tipo TData, in modo da poter inserire la struttura nel main
+
+int main(){
+	TData utente; 					//dichiarazione di utente di tipo TData
+	char *pnome= utente.nome;
+	char *pcognome= utente.cognome;
+	int *peta= &utente.eta;
+	
+	printf("inserisci nome: ");
+	gets(pnome);				//oppure gets(utente.nome)
+	printf("inserisci cognome: ");
+	gets(pcognome);				//oppure gets(utente.cognome)
+	printf("inserisci eta': ");
+	scanf("%d", peta);			//oppure gets(utente.eta)
+	
+	printf("\n\nStruttura dati senza puntatori:\n");
+	printf("\nil nome e': %s", utente.nome);
+	printf("\nil cognome e': %s", utente.cognome);
+	printf("\nl'eta' e': %d", utente.eta);
+	
+	printf("\n\nStruttura dati con i puntatori:\n");
+	printf("\nil nome e': %s", pnome);
+	printf("\nil cognome e': %s", pcognome);
+	printf("\nl'eta' e': %d", *peta);
+	
+}
