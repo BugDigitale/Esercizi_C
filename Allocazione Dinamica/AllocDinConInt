@@ -1,0 +1,31 @@
+/*
+Esempio di allocazione dinamica con int
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+	int *array, dim, i;
+	
+	printf("inserisci il quanti numeri vuoi nell'array: ");
+	scanf("%d", &dim);
+	
+	if(dim==0){
+		printf("ERRORE! Inserire almeno un numero!");
+		exit(0);
+	}else{
+		array=malloc(dim*sizeof(int));
+		printf("\n\ninserisci i numeri dell'array:\n");
+		for(i=0;i<dim;i++){
+			scanf("%d", &array[i]);
+		}
+	
+		printf("\n\nelementi allocati: ");
+		printf("\n\nelem\tindirizzo\tvalore");
+		for(i=0;i<dim;i++){
+			printf("\n%d \t%d \t%d", i, &array[i], array[i]);
+		}
+		free(array);  				//per deallocare alla fine, se non si fa è un errore
+	}
+}
