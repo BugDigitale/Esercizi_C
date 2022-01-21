@@ -21,5 +21,9 @@ int main(){
 	//oppure
 	
 	printf("\nIl numero di pagine e': %d", p->pagine);
+	
+	strcpy(libro1.titolo, "ciao a tutti");
+	
+	printf("\n\nIl titolo del libro e': %s", p->titolo);
 }
 
