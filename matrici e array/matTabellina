@@ -1,0 +1,61 @@
+/*
+22-01-2022
+Memorizzare in un array bidimensionale 10 x 10 la tavola pitagorica, quella delle tabelline,e stampare
+il contenuto della matrice (nella prima riga si dovrà trovare la tabellina del 1: 1 2 3 4 5 6 7 8 9 10).
+
+ANALISI E SPECIFICA
+-dati in input: matrice di 10x10
+-precondizione: 
+-dati in output: tabelline
+-postcondizione: stampare tutta la tabellina su una riga
+
+NOME         TIPO             DESCRIZIONE
+mat          int              matrice 10x10
+i            int              variabile intermedia usata come indice
+j            int              variabile intermedia usata come indice
+k            int              variabile usata come costante per il calcolo delle tabelline
+finale       int              variabile contente risultato delle moltiplicazioni
+
+COME POSSO DIVEDERE IL PROGRAMMA?
+-funzione main
+-funzione stampa
+
+PROGETTAZIONE
+funzione main
+-richiamo alla funzione stampa
+
+funzione stampa
+-calcolo delle tabelline
+-stampa delle tabelline
+
+*/
+#include<stdio.h>
+#define righe 10
+#define colonne 10
+
+void stampa(int mat[][colonne]);
+
+int main(){
+	int mat[righe][colonne];
+	
+	stampa(mat);
+	
+}
+
+void stampa(int mat[][colonne]){
+	int i, j, molt, k=1, finale;
+	
+	for(i=1;i<righe+1;i++){
+		molt=1;
+		finale=0;
+		printf("\ntabellina del %d: ", i);
+		for(j=1;j<colonne+1;j++){
+			finale= k*molt;
+			molt++;
+			printf(" %d", finale);
+			finale=0;
+		}
+		k++;
+		printf("\n");
+	}
+}
