@@ -1,0 +1,14 @@
+/*
+Apertura di un file
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+	
+	FILE *puntaFile;
+	puntaFile=fopen("prova.txt","r");
+	if(puntaFile==NULL)
+		printf("il file non puo' essere aperto\n");	
+}
