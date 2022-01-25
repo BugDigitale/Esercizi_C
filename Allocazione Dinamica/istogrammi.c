@@ -1,8 +1,8 @@
 /*
 25-01-2022
 Scrivere un programma in linguaggio C che riceve in ingresso una sequenza di N numeri
-interi. Il valore N è inserito dall’utente. I numeri sono memorizzati in un vettore. Terminato l’inserimento della sequenza di numeri, il programma deve visualizzare una riga di
-asterischi per ogni numero inserito. Il numero di asterischi nella riga è pari al valore del
+interi. Il valore N Ã¨ inserito dallâ€™utente. I numeri sono memorizzati in un vettore. Terminato lâ€™inserimento della sequenza di numeri, il programma deve visualizzare una riga di
+asterischi per ogni numero inserito. Il numero di asterischi nella riga Ã¨ pari al valore del
 numero inserito. Ad esempio, dato il vettore 9 4 6 il programma deve visualizzare:
 Elemento 1: 9 *********
 Elemento 2: 4 ****
