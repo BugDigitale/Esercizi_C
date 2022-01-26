@@ -1,0 +1,38 @@
+/*
+26-01-2022
+Scrivere un programma in linguaggio C che legga una frase introdotta da tastiera. La
+frase è terminata dall’introduzione del carattere di invio. La frase contiene sia caratteri
+maiuscoli che caratteri minuscoli, e complessivamente al più 100 caratteri. Il programma
+dovrà stampare su schermo le seguenti informazioni:
+• per ognuna delle lettere dell’alfabeto, il numero di volte che la lettera compare nella
+stringa
+• il numero di consonanti presenti nella stringa
+• il numero di vocali presenti nella stringa.
+*/
+
+#include<stdio.h>
+#include<string.h>
+#include<stdlib.h>
+
+int main(){
+	char *stringa, frase[100], k=0, j=0, i;
+	
+	printf("Inserisci una frase:\n");
+	gets(frase);
+	
+	stringa=(char *)malloc(strlen(frase)*sizeof(char));
+	strcpy(stringa, frase);
+	
+	puts(stringa);
+	
+	for(i=0;i<strlen(stringa);i++){
+		if(stringa[i]=='a' || stringa[i]=='e' || stringa[i]=='i' || stringa[i]=='o' || stringa[i]=='u'){
+			k++;
+		}else{
+			j++;
+			if(stringa[i]==' ')
+				j--;
+		}
+	}
+	printf("\n\nLe vocali sono: %d, mentre le consonanti sono: %d", k, j);
+}
